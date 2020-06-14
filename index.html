@@ -73,23 +73,86 @@
             для вашего бизнеса
           </h1>
           <button data-modal-open class="main-button">Заказать услугу</button>
-          <div data-modal class="backdrop is hidden">
+          <div data-modal class="backdrop is-hidden">
             <div class="modal">
-              <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla
-                aliquid cum sapiente consequuntur numquam sunt doloribus quod
-                omnis consequatur adipisci sequi neque provident suscipit a
-                cumque non est velit voluptatum voluptatem quas tempora,
-                perspiciatis ipsa molestiae fugiat! Placeat ipsum nisi eveniet,
-                atque dolores quos dolore saepe cumque unde enim aspernatur vero
-                necessitatibus explicabo quis laboriosam alias perferendis
-                laudantium in mollitia amet. Dicta reprehenderit, fugiat modi in
-                et tempora dolor temporibus quaerat alias rem non optio. Amet
-                vero facere iure recusandae quidem quibusdam earum placeat
-                molestias autem nisi pariatur libero, provident sed et illo
-                harum! Dolore aperiam voluptatum officia inventore molestias?
-              </p>
-              <button data-modal-close>Закрыть</button>
+              <div class="background-icon">
+                <svg class="modal-icon" width="18px" hight="18px">
+                  <use href="./images/symbol-defs.svg#icon-close-black"></use>
+                </svg>
+              </div>
+              <form class="form" autocomplete="off">
+                <h1 class="form-header">
+                  Оставьте свои данные, мы вам перезвоним
+                </h1>
+                <ul class="form-list">
+                  <li class="form-item">
+                    <input
+                      class="form-input"
+                      type="text"
+                      name="name"
+                      id="name"
+                      placeholder=" "
+                    />
+                    <label class="form-label" for="name">Имя </label>
+                    <svg class="form-icon" width="18px" hight="18px">
+                      <use
+                        href="./images/symbol-defs.svg#icon-person-black"
+                      ></use>
+                    </svg>
+                  </li>
+                  <li class="form-item">
+                    <input
+                      class="form-input"
+                      type="tel"
+                      name="telephone"
+                      id="telephone"
+                      placeholder=" "
+                    />
+                    <label class="form-label" for="telephone">Телефон </label>
+                    <svg class="form-icon" width="18px" hight="18px">
+                      <use
+                        href="./images/symbol-defs.svg#icon-phone-black"
+                      ></use>
+                    </svg>
+                  </li>
+                  <li class="form-item">
+                    <input
+                      class="form-input"
+                      type="email"
+                      name="mail"
+                      id="mail"
+                      placeholder=" "
+                    />
+                    <label class="form-label" for="mail">Почта </label>
+                    <svg class="form-icon" width="18px" hight="18px">
+                      <use
+                        href="./images/symbol-defs.svg#icon-email-black"
+                      ></use>
+                    </svg>
+                  </li>
+                  <li class="form-item">
+                    <textarea
+                      class="form-input textarea"
+                      name="comment"
+                      id="comment"
+                      placeholder="Коментарий"
+                    ></textarea>
+                  </li>
+                  <li>
+                    <label class="checkbox-label"
+                      ><input
+                        class="checkbox"
+                        type="checkbox"
+                        name="conditions"
+                      /><span class="checkbox-icon"></span> Соглашаюсь с
+                      рассылкой и принимаю
+                      <a class="checkbox-link" href=""> Условия договора</a>
+                    </label>
+                  </li>
+                </ul>
+
+                <button class="close-button" data-modal-close>Отправить</button>
+              </form>
             </div>
           </div>
         </div>
