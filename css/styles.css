@@ -372,6 +372,7 @@ p {
 }
 .checkbox-label {
   display: flex;
+  align-items: center;
   min-width: 425px;
   font-size: 14px;
   line-height: 1, 7;
@@ -382,6 +383,7 @@ p {
 .checkbox-link {
   color: var(--accent-color);
   text-decoration: underline;
+  padding-left: 5px;
 }
 .checkbox-icon {
   display: inline-block;
