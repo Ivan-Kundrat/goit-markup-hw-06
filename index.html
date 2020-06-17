@@ -75,11 +75,11 @@
           <button data-modal-open class="main-button">Заказать услугу</button>
           <div data-modal class="backdrop is-hidden">
             <div class="modal">
-              <div class="background-icon">
+              <button class="background-icon" data-modal-close>
                 <svg class="modal-icon" width="18px" hight="18px">
                   <use href="./images/symbol-defs.svg#icon-close-black"></use>
                 </svg>
-              </div>
+              </button>
               <form class="form" autocomplete="off">
                 <h1 class="form-header">
                   Оставьте свои данные, мы вам перезвоним
@@ -135,21 +135,21 @@
                       class="form-input textarea"
                       name="comment"
                       id="comment"
-                      placeholder="Коментарий"
+                      placeholder=" "
                     ></textarea>
-                  </li>
-                  <li>
-                    <label class="checkbox-label"
-                      ><input
-                        class="checkbox"
-                        type="checkbox"
-                        name="conditions"
-                      /><span class="checkbox-icon"></span> Соглашаюсь с
-                      рассылкой и принимаю
-                      <a class="checkbox-link" href=""> Условия договора</a>
+                    <label class="form-textarea" for="comment"
+                      >Коментарий
                     </label>
                   </li>
                 </ul>
+                <label class="checkbox-label"
+                  ><input class="checkbox" type="checkbox" name="conditions" />
+                  <p>
+                    <span class="checkbox-icon"></span>
+                    Соглашаюсь с рассылкой и принимаю
+                    <a class="checkbox-link" href=""> Условия договора</a>
+                  </p>
+                </label>
 
                 <button class="close-button" data-modal-close>Отправить</button>
               </form>
